@@ -6,7 +6,7 @@ Based on Bastian Allgeier *Columns plugin*, this is a plugin for [Kirby](http://
 
 ## Installation
 
-[Download the plugins repository](https://github.com/julien-gargot/kirby-plugin-table.git) and copy the folder content to `/site/plugins/table/` of your site.
+[Download the plugins repository](https://github.com/julien-gargot/kirby-plugin-table/archive/master.zip) and copy `table.php` to `/site/plugins` of your site.
 
 ## Example usage in Kirbytext
 
