@@ -1,6 +1,6 @@
 # Table Plugin
 
-This is a plugin for [Kirby](http://getkirby.com/) enables a simple syntax in Kirbytext for simple table layouts.
+Based on Bastian Allgeier *Columns plugin*, this is a plugin for [Kirby](http://getkirby.com/) enables a simple syntax in Kirbytext for simple table layouts with formatted content.
 
 ![Table](table.png)
 
