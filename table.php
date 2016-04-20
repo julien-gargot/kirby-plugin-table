@@ -8,11 +8,11 @@
  */
 kirbytext::$pre[] = function($kirbytext, $text) {
   $text = preg_replace_callback('!\(table(…|\.{3})\)(.*?)\((…|\.{3})table\)!is', function($matches) use($kirbytext) {
-    $rows = preg_split('!(\n|\r\n)\+{4}\s+(\n|\r\n)!', $matches[2]);
+    $rows = preg_split('!(\n|\r\n)(\+{4}|\((…|\.{3})row(…|\.{3})\))\s+(\n|\r\n)!', $matches[2]);
     $html = array();
     foreach($rows as $row) {
       $field       = new Field($kirbytext->field->page, null, trim($row));
-      $columns     = preg_split('!(\n|\r\n)\/{4}\s+(\n|\r\n)!', $field);
+      $columns     = preg_split('!(\n|\r\n)(\/{4}|\((…|\.{3})column(…|\.{3})\))\s+(\n|\r\n)!', $field);
       $htmlColumns = array();
       foreach($columns as $column) {
         $field = new Field($kirbytext->field->page, null, trim($column));
