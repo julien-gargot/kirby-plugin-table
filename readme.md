@@ -54,7 +54,7 @@ Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna molli
 (…table)
 ```
 
-The `(…row…)` (previously `++++`) seperator is used to divide text into rows. The `(…column…)` (previously `////`) seperator is used to divide text into columns. Just make sure to provide the same number of columns for each row. For the opening and closing *table*, *row* and *column* tags you can either use the more elegant ellipsis … (`Alt+.` on a Mac or `AltGr+Shift+Space` on certain Linux distribution) or three dots.
+The `(…row…)` (previously `++++`) seperator is used to divide text into rows. The `(…column…)` (previously `////`) seperator is used to divide text into columns. Just make sure to provide the same number of columns for each row. For the opening and closing *table*, *row* and *column* tags you can either use the more elegant ellipsis … (`Alt+.` on a Mac or `AltGr+Shift+,` on certain Linux distribution) or three dots.
 
 ```
 (table…)
