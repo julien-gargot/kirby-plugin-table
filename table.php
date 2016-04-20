@@ -4,7 +4,7 @@
  * based on Bastian Allgeier <bastian@getkirby.com> Columns plugin.
  *
  * @author Julien Gargot <julien@g-u-i.net>
- * @version 1.0.0
+ * @version 1.1.0
  */
 kirbytext::$pre[] = function($kirbytext, $text) {
   $text = preg_replace_callback('!\(table(…|\.{3})\)(.*?)\((…|\.{3})table\)!is', function($matches) use($kirbytext) {
