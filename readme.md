@@ -79,3 +79,9 @@ Class names for the table can be modified in your config:
 ```php
 c::set('table.container', 'table');
 ```
+
+Optionally you can wrap the table with the following setting:
+
+```php
+c::set('table.wrap', '<div class="table-responsive">|</div>');
+```

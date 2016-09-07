@@ -8,6 +8,7 @@
  */
 kirbytext::$pre[] = function($kirbytext, $text) {
   $text = preg_replace_callback('!\(table(…|\.{3})\)(.*?)\((…|\.{3})table\)!is', function($matches) use($kirbytext) {
+    $wrap = explode('|', c::get('table.wrap', '|'));
     $rows = preg_split('!(\n|\r\n)(\+{4}|\((…|\.{3})row(…|\.{3})\))\s+(\n|\r\n)!', $matches[2]);
     $html = array();
     foreach($rows as $row) {
@@ -20,7 +21,7 @@ kirbytext::$pre[] = function($kirbytext, $text) {
       }
       $html[] = '<tr>' . implode($htmlColumns) . '</tr>';
     }
-    return '<table class="' . c::get('table.container', 'table') . '">' . implode($html) . '</table>';
+    return $wrap[0] . '<table class="' . c::get('table.container', 'table') . '">' . implode($html) . '</table>' . $wrap[1];
   }, $text);
   return $text;
 };
