@@ -1,7 +1,7 @@
 # IMPORTANT NOTICE
 
 Please, go here: https://github.com/floriankarsten/kirby-tablex
-@flokosiol plugin is all I didn’t take the time to do!
+@floriankarsten plugin is all I didn’t take the time to do!
 
 I will not update my plugin anymore ;)
 
